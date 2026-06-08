@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Divine Vedic</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+<div class="navbar-logo">
+<a href="index.html">
+<img src="image/7.png" alt="Logo">
+</a>
+</div>
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+<div class="navbar-right" id="navbar-right">
+
+<ul class="nav-menu">
+<li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="about.html" class="nav-link">About Us</a></li>
+<li><a href="service.html" class="nav-link">Services</a></li>
+<li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+</ul>
+
+<a href="explore.html">
+<button class="btn-primary">Explore Now</button>
+</a>
+
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section">
+
+<div class="hero-content">
+<h1 class="hero-title">हमसे संपर्क करें</h1>
+
+<p class="hero-subtitle">
+अपनी समस्या का समाधान पाने के लिए अभी पंडित जी से जुड़ें
+</p>
+</div>
+
+</section>
+
+<!-- INTRO -->
+<section class="about-section">
+
+<h1 class="section-title">
+पंडित जी से मार्गदर्शन प्राप्त करें
+</h1>
+
+<p class="hero-subtitle">
+जगरण, भागवत कथा, कुंडली विश्लेषण या किसी भी धार्मिक अनुष्ठान के लिए आप हमसे सीधे संपर्क कर सकते हैं।
+</p>
+
+<p class="hero-subtitle" style="color:#e6b752;">
+"सही समय पर सही मार्गदर्शन जीवन बदल सकता है"
+</p>
+
+</section>
+
+<!-- FORM -->
+<section class="services-section">
+
+<h1 class="section-title">
+अपनी जानकारी भेजें
+</h1>
+
+<div style="max-width:600px; margin:auto; margin-top:40px;">
+
+<form action="send.php" method="POST">
+
+<!-- NAME -->
+<input 
+type="text" 
+name="name"
+placeholder="आपका नाम" 
+required
+style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:none;"
+>
+
+<!-- EMAIL -->
+<input 
+type="email" 
+name="email" 
+placeholder="आपका ईमेल" 
+required
+style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:none;"
+>
+
+<!-- PHONE -->
+<input 
+type="tel" 
+name="phone" 
+placeholder="मोबाइल नंबर" 
+required
+style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:none;"
+>
+
+<!-- DOB -->
+<input 
+type="date" 
+name="dob" 
+required
+style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:none;"
+>
+
+<!-- SERVICE -->
+<input 
+type="text" 
+name="work" 
+placeholder="आप किस सेवा के लिए संपर्क कर रहे हैं?" 
+required
+style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:none;"
+>
+
+<!-- MESSAGE -->
+<textarea 
+name="message" 
+placeholder="अपनी समस्या लिखें" 
+required
+style="width:100%; padding:12px; height:120px; border-radius:8px; border:none;"
+></textarea>
+
+<br><br>
+
+<button 
+type="submit" 
+class="btn-primary" 
+style="width:100%;"
+>
+संदेश भेजें
+</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- CONTACT INFO -->
+<section class="about-section">
+
+<h1 class="section-title">
+सीधा संपर्क
+</h1>
+
+<p class="hero-subtitle">
+📍 वजीराबाद, दिल्ली (मूल: बनारस)
+<br>
+<a ="btn-primary" href="https://wa.me/918076160258?text=नमस्ते%20पंडित%20जी,%20मुझे%20जानकारी%20चाहिए" target="_blank">
+<button class="btn-primary">
+WhatsApp पर संपर्क करें
+</button>
+</a> 
+<br>
+<a  href="mailto:rishabretrogaming999@gmail.com"style="color: white; text-decoration: none; ">
+    rishabretrogaming999@gmail.com
+</a>
+</p>
+
+</section>
+
+<!-- CTA -->
+<section class="services-section">
+
+<h1 class="section-title">
+आज ही शुरुआत करें
+</h1>
+
+<p class="hero-subtitle">
+देर मत कीजिए — अभी संपर्क करें और समाधान प्राप्त करें
+</p>
+
+<a href="contact.html">
+<button class="btn-primary" style="margin-top:40px;">
+अभी संपर्क करें
+</button>
+</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section">
+
+<div class="footer-content">
+
+<div class="footer-box">
+<h2>Divine Vedic</h2>
+
+<p>
+वैदिक ज्ञान के माध्यम से जीवन को सही दिशा देना।
+</p>
+</div>
+
+<div class="footer-box">
+<h2>Contact</h2>
+
+<p>Email: rishabretrogaming999@gmail.com</p>
+<p>Delhi, India</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Divine Vedic</p>
+</div>
+
+</footer>
+
+<script>
+
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".navbar-right");
+
+toggle.addEventListener("click", () => {
+menu.classList.toggle("active");
+});
+
+</script>
+
+</body>
+</html>
